@@ -32,6 +32,7 @@ namespace MyGenericClass
             //     Adeus
             // Floats:
             //     0
+            
             //     0
             //     54.6
 
