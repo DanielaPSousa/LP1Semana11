@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace HowManyOfThisType
 {
-    public class Checker
+    public static class Checker
     {
         
     }
