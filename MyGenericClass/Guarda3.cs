@@ -14,5 +14,16 @@ namespace MyGenericClass
             itemOne = default(T);
             itemTwo = default(T);
         }
+
+        public T GetItem(int i)
+        {
+            return i switch
+            {
+                0 => itemZero,
+                1 => itemOne,
+                2 => itemTwo,
+                _ => throw new IndexOutOfRangeException()
+            };
+        }
     }
 }
