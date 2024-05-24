@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace MyEnumerable
+namespace JustLikeACollection
 {
     public class Guarda3<T> : IEnumerable<T>
     {
@@ -43,6 +43,22 @@ namespace MyEnumerable
                     break;
                 default:
                     throw new IndexOutOfRangeException();
+            }
+        }
+
+        public void Add(T item)
+        {
+            if (EqualityComparer<T>.Default.Equals(itemZero, default(T)))
+            {
+                itemZero = item;
+            }
+            else if (EqualityComparer<T>.Default.Equals(itemOne, default(T)))
+            {
+                itemOne = item;
+            }
+            else if (EqualityComparer<T>.Default.Equals(itemTwo, default(T)))
+            {
+                itemTwo = item;
             }
         }
 
