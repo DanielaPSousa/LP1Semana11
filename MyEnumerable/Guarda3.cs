@@ -52,5 +52,10 @@ namespace MyEnumerable
             yield return itemOne;
             yield return itemTwo;
         }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GettheEnumerator();
+        }
     }
 }
