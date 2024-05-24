@@ -46,7 +46,7 @@ namespace MyEnumerable
             }
         }
 
-        public IEnumerator<T> GettheEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
             yield return itemZero;
             yield return itemOne;
@@ -55,7 +55,7 @@ namespace MyEnumerable
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            return GettheEnumerator();
+            return GetEnumerator();
         }
     }
 }
